@@ -81,6 +81,7 @@ ORDER_KEYS = (
     "n_tokens",
     "score"
     )
+
 # Symbols
 SYMBOLS = (
     "?",
@@ -119,6 +120,7 @@ INSERT_GARBAGE_QUERY = """
         )
         ;
 """
+
 INSERT_NEWS_QUERY = """
     INSERT INTO news
         (

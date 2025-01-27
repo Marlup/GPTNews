@@ -646,7 +646,7 @@ def process_raw_urls(
         n_to_processing = len(news_to_process)
         n_insertions_to_db = len(news_data)
 
-        # Set a warning if there are news to process but no new news to insert
+        # Set a warning if there are news to process but no news to insert
         if n_insertions_to_db == 0:
             warning_message = "0 insertions to db"
         

@@ -209,7 +209,7 @@ def read_media_sections(pid: str):
 def has_http_attribute_value(tag):
     for attr in tag.attrs:
         attr_value = tag.attrs[attr]
-        if isinstance(attr_value, str) and ('http://' in attr_value or 'https://' in attr_value) :
+        if isinstance(attr_value, str) and ('http://' in attr_value or 'https://' in attr_value):
             return True
     return False
 
@@ -327,7 +327,7 @@ class StatisticsManager():
         # Add skipline to header
         if write_header and not header.endswith("\n"):
             header += "\n"
-
+        
         # Catch lock
         lock = multiprocessing.Lock()
         with lock:
